@@ -1,4 +1,4 @@
-# Weather Observation Station 9
+# Weather Observation Station 10
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -21,17 +21,17 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T06:08:20.674Z  
+**Submitted:** 2026-10-05T06:09:20.969Z  
 
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
 WHERE NOT (
-    CITY LIKE 'A%'
-    OR CITY LIKE 'E%'
-    OR CITY LIKE 'I%'
-    OR CITY LIKE 'O%'
-    OR CITY LIKE 'U%'
+    CITY LIKE '%A'
+    OR CITY LIKE '%E'
+    OR CITY LIKE '%I'
+    OR CITY LIKE '%O'
+    OR CITY LIKE '%U'
 );
 
 ```
